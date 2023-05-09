@@ -11,14 +11,20 @@ function support_content() {
         // Envía el correo electrónico
         $to = 'david@kreaticweb.com';
         $subject = 'Soporte WP - ' . get_bloginfo('name');
-        $body = 'Nombre: ' . $nombre . "\n\n" . 'Correo electrónico: ' . $email . "\n\n" . 'Mensaje: ' . $mensaje;
+        $body = 'Nombre: ' . $nombre . "<br>";
+        $body .= 'Correo electrónico: ' . $email . "<br>";
+        $body .= 'Mensaje: ' . $mensaje;
         $headers = array('Content-Type: text/html; charset=UTF-8');
         $enviado = wp_mail($to, $subject, $body, $headers);
 
         if ($enviado) {
-            echo '<p>Mensaje enviado correctamente. Gracias por contactarnos.</p>';
+            echo '<div class="notice notice-success">
+                <p>Mensaje enviado correctamente. David se pondrá en contacto contigo al correo <b>' . $email . '</b></p>
+            </div>';
         } else {
-            echo '<p>Ha ocurrido un error al enviar el mensaje. Por favor, intenta de nuevo más tarde.</p>';
+            echo '<div class="notice notice-error">
+                <p>Ha ocurrido un error al enviar el mensaje. Por favor, contacta directamente <a href="https://wa.me/665067587" target="_blank">aquí</a>.</p>
+            </div>';
         }
     }
 
