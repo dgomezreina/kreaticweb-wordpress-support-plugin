@@ -8,9 +8,14 @@
           <mappings>
             <mapping deploy="/wp-content/plugins" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/README.md" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+          </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="Kreatic Web - Hostinger">
+      <paths name="Kreatic Web - Hostinger (project level)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

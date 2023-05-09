@@ -14,7 +14,7 @@ Version: 1.0.0
 Author URI: https://kreaticweb.com
 */
 
-
+$plugin_url = plugin_dir_url( __FILE__ );
 
 // Activar el plugin
 function activate_my_alert_plugin() {
@@ -45,10 +45,11 @@ function agregar_pestana(){
 
 
 
-
 include 'includes/styles.php';
 include 'includes/page.php';
-include 'includes/dashboard-widget.php';
+//include 'includes/dashboard-widget.php';
 //include 'includes/alert.php';
 
 
+// TODO : Crear recordatorios de que se necesita mantenimiento
+// TODO : Restringir X usuarios para la visualizacion del plugin
