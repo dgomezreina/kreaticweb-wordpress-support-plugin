@@ -40,15 +40,15 @@ function support_content() {
             <div class="col-md-6">
                 <div class="krw-card p-3 mt-3">
                     <h2 class="mt-0">Información</h2>
-                    <p>Datos de agencia y desarrollador a cargo de <b><?= get_bloginfo('name'); ?></b>.</p>
+                    <p>Desarrollador asignado a <b><?= get_bloginfo('name'); ?></b>.</p>
                     <hr>
-                    <p><b>Desarrollador:</b> <a href="https://kreaticweb.com" target="_blank">David Gomez Reina</a></p>
+                    <p><b>Desarrollador:</b> <a href="https://kreaticweb.com" target="_blank">David Gomez Reina</a>, Full-Stack Developer</p>
                     <p><b>Whatsapp:</b> <a href="https://wa.me/665067587" target="_blank">665 06 75 87</a></p>
                     <p><b>Correo:</b> <a href="mailto:david@kreaticweb.com">david@kreaticweb.com</a></p>
                     <p><b>Agencia:</b> <a href="https://kreaticweb.com" target="_blank">Kreatic Web</a></p>
                     <p><b>Web:</b> <a href="https://kreaticweb.com" target="_blank">https://kreaticweb.com</a></p>
                     <hr class="mb-4">
-                    <a class="" href="https://kreaticweb.com">
+                    <a class="" href="https://kreaticweb.com" target="_blank">
                         <img height="30px" src="<?= $plugin_url; ?>/assets/img/kreaticweb-logo.svg" alt="">
                     </a>
                 </div>
